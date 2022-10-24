@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<launch>
+
+<node pkg="yolov4_trt_ros" type="run_script.sh" name="run_script" />
+
+<!-- mavros_node -->
+<arg name="fcu_url" default="/dev/ttyTHS1:921600" />
+<arg name="gcs_url" default="" />
+<arg name="tgt_system" default="1" />
+<arg name="tgt_component" default="1" />
+<arg name="log_output" default="screen" />
+<arg name="fcu_protocol" default="v2.0" />
+<arg name="respawn_mavros" default="false" />
+
+<include file="$(find mavros)/launch/node.launch">
+    <arg name="pluginlists_yaml" value="$(find mavros)/launch/px4_pluginlists.yaml" />
+    <arg name="config_yaml" value="$(find mavros)/launch/px4_config.yaml" />
+    <arg name="fcu_url" value="$(arg fcu_url)" />
+    <arg name="gcs_url" value="$(arg gcs_url)" />
+    <arg name="tgt_system" value="$(arg tgt_system)" />
+    <arg name="tgt_component" value="$(arg tgt_component)" />
+    <arg name="log_output" value="$(arg log_output)" />
+    <arg name="fcu_protocol" value="$(arg fcu_protocol)" />
+    <arg name="respawn_mavros" default="$(arg respawn_mavros)" />
+</include> -->
+
+<!-- usb_cam_node -->
+<node name="usb_cam" pkg="usb_cam" type="usb_cam_node" output="screen" >
+    <param name="video_device" value="/dev/video0" />
+    <param name="image_width" value="640" />
+    <param name="image_height" value="480" />
+    <param name="pixel_format" value="yuyv" />
+    <param name="camera_frame_id" value="usb_cam" />
+    <param name="io_method" value="mmap"/>
+</node>
+
+<!-- yolov4_trt_node -->
+<node pkg="yolov4_trt_ros" type="trt_yolo_v4.py" name="yolov4_trt_node" output="screen">		
+    <param name="video_topic" type="string" value="/usb_cam/image_raw" />
+    <param name="model" type="string" value="yolov4" />	
+    <param name="model_path" type="string" value="$(find yolov4_trt_ros)/yolo/" />
+    <param name="input_shape" type="string" value="288" />
+    <param name="category_number" type="int" value="1" />
+    <param name="confidence_threshold" type="double" value="0.5" />
+    <param name="show_image" type="bool" value="True" />
+</node>
+
+</launch>
