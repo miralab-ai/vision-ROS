@@ -59,7 +59,7 @@ class yolov4(object):
         rospack = rospkg.RosPack()
         package_path = rospack.get_path("yolov4_trt_ros")
         self.video_topic = rospy.get_param("/video_topic", "/usb_cam/image_raw")
-        self.model = rospy.get_param("/model", "yolov4")
+        self.model = rospy.get_param("/model", "yolov7")
         self.model_path = rospy.get_param(
             "/model_path", package_path + "/yolo/")
         self.category_num = rospy.get_param("/category_number", 1)
@@ -193,7 +193,7 @@ class yolov4(object):
 
 def main():
     yolo = yolov4()
-    rospy.init_node('yolov4_trt_ros', anonymous=True)
+    rospy.init_node('yolov7_trt_ros', anonymous=True)
     try:
         rospy.spin()
     except KeyboardInterrupt:
