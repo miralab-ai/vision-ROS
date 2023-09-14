@@ -1,4 +1,4 @@
-# visualTargetTracking
+# vision-ROS
 
 Github repository for the paper titled as "**Open-Source Visual Target Tracking System both on Simulation Environment and Real Drone**".
 
