@@ -4,10 +4,7 @@ This package contains the **trt_yolo_v7.py** node that performs the inference us
 After **trt_yolo_v7.py** node publishes the necessary data to **tracker_offboard.cpp**, this node makes the calculations based on its inner PID controller and generates the vehicle parameters (linear velocity and angular velocity).
 This parameters are shared with MAVROS package to be converted into MAVLink message format.
 
-
-https://github.com/zcelil/vision-ROS/assets/57402408/85088cf6-e0b8-4b47-83e7-aee894564832
-
-
+![person_track](https://github.com/zcelil/vision-ROS/assets/57402408/bb5893c1-d558-487e-84aa-6475d7ab0a44)
 
 
 ## Setting up the environment
