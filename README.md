@@ -173,3 +173,9 @@ ros::Publisher body_vel_pub  = nh.advertise<mavros_msgs::PositionTarget>("mavros
 
 For the installation of MAVROS and MAVLink, you can found the details on [User Guide](https://docs.px4.io/main/en/)
 
+---
+## Licenses and References
+
+### 1. TensorRT samples from [jkjung-avt](https://github.com/jkjung-avt/) 
+
+### 2. SORT from [Hyun-je](https://github.com/Hyun-je/SORT-ros) 
