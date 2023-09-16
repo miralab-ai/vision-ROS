@@ -171,5 +171,5 @@ ros::Publisher body_vel_pub  = nh.advertise<mavros_msgs::PositionTarget>("mavros
 
 ```
 
-For the installation of MAVROS and MAVLink, you can found the details on [User Guide](ttps://docs.px4.io/main/en/)
+For the installation of MAVROS and MAVLink, you can found the details on [User Guide](https://docs.px4.io/main/en/)
 
