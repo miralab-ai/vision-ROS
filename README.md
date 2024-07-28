@@ -3,6 +3,9 @@
 This package contains the **trt_yolo_v7.py** node that performs the inference using NVIDIA's TensorRT engine.
 After **trt_yolo_v7.py** node publishes the necessary data to **tracker_offboard.cpp**, this node makes the calculations based on its inner PID controller and generates the vehicle parameters (linear velocity and angular velocity).
 This parameters are shared with MAVROS package to be converted into MAVLink message format.
+The official paper can be found at the following link:
+
+https://link.springer.com/chapter/10.1007/978-3-031-52760-9_11
 
 ## Example 1 - Person Tracking (Fine-tuning both lateral and longitudinal controllers)
 ![person_track](https://github.com/zcelil/vision-ROS/assets/57402408/bb5893c1-d558-487e-84aa-6475d7ab0a44)
