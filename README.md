@@ -10,6 +10,9 @@ The official paper can be found at the following link:
 
 https://link.springer.com/chapter/10.1007/978-3-031-52760-9_11
 
+## Abstract
+This work presents an investigation into the domain of dynamic target tracking through object detection, particularly emphasizing the context of open-source applications like PX4, ROS, and YOLO. Over the years, achieving real-time object tracking on UAVs in dynamic environments has been a formidable challenge, necessitating offline computations or substantial onboard processing resources. However, contemporary UAVs are now equipped with advanced edge embedded devices, sensors, and cameras, enabling the integration of deep learning-based vision applications. This advancement offers the prospect of directly deploying cutting-edge applications onto UAVs, thereby expanding their utility in areas such as surveillance, search and rescue, and videography. To fully harness the potential of these vision applications, a communication infrastructure interfacing with the UAV’s underneath closed controllers becomes imperative. We’ve developed an integrated visual target-tracking system that connects a flight controller unit with a graphical unit by leveraging ROS tools and open-source deep learning packages. The overall integrated system based on ROS, deep learning applications, and custom PID controllers is shared on GitHub as open-source software package in a way that benefits everyone interested: https://github.com/miralab-ai/vision-ROS.
+
 ## Example 1 - Person Tracking (Fine-tuning both lateral and longitudinal controllers)
 ![person_track](https://github.com/zcelil/vision-ROS/assets/57402408/bb5893c1-d558-487e-84aa-6475d7ab0a44)
 
