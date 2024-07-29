@@ -191,7 +191,7 @@ For the installation of MAVROS and MAVLink, you can found the details on [User G
 
 ## Citation 
 
-If you use the our research in your research, please cite our related publication: 
+If you use the our research in your studies, please cite our related publication: 
 
 ```bibtex
 @inproceedings{yilmaz2023open,
