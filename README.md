@@ -188,3 +188,17 @@ For the installation of MAVROS and MAVLink, you can found the details on [User G
 ### 1. TensorRT samples from [jkjung-avt](https://github.com/jkjung-avt/) 
 
 ### 2. SORT from [Hyun-je](https://github.com/Hyun-je/SORT-ros) 
+
+## Citation 
+
+If you use the our research in your research, please cite our related publication: 
+
+```bibtex
+@inproceedings{yilmaz2023open,
+  title={Open-Source Visual Target-Tracking System Both on Simulation Environment and Real Unmanned Aerial Vehicles},
+  author={Y{\i}lmaz, Celil and Ozgun, Abdulkadir and Erol, Berat Alper and Gumus, Abdurrahman},
+  booktitle={International Congress of Electrical and Computer Engineering},
+  pages={147--159},
+  year={2023},
+  organization={Springer}
+}
