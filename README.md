@@ -1,4 +1,4 @@
-# Github repository for the paper titled as "Open-Source Visual Target Tracking System Both on Simulation Environment and Real Drone".
+## Github repository for the paper titled as "Open-Source Visual Target Tracking System Both on Simulation Environment and Real Drone".
 
 ## Integrated vision-ROS system utilizing Yolov7-Tiny accelerated by TensorRT engine and MAVROS 
 
