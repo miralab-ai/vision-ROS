@@ -1,8 +1,11 @@
-# Integrated vision-ROS system utilizing Yolov7-Tiny accelerated by TensorRT engine and MAVROS 
+# Github repository for the paper titled as "Open-Source Visual Target Tracking System Both on Simulation Environment and Real Drone".
+
+## Integrated vision-ROS system utilizing Yolov7-Tiny accelerated by TensorRT engine and MAVROS 
 
 This package contains the **trt_yolo_v7.py** node that performs the inference using NVIDIA's TensorRT engine.
 After **trt_yolo_v7.py** node publishes the necessary data to **tracker_offboard.cpp**, this node makes the calculations based on its inner PID controller and generates the vehicle parameters (linear velocity and angular velocity).
 This parameters are shared with MAVROS package to be converted into MAVLink message format.
+
 The official paper can be found at the following link:
 
 https://link.springer.com/chapter/10.1007/978-3-031-52760-9_11
